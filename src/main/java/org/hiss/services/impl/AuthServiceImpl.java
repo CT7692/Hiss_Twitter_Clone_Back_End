@@ -50,7 +50,7 @@ public class AuthServiceImpl implements AuthService {
                     passwordEncoder
                             .encode(registerDTO.getPassword()));
 
-            user.setImageURL("logo.png");
+            user.setImageURL("https://static-00.iconduck.com/assets.00/vulture-icon-2048x2048-fczgn9sx.png");
 
             userRepository.save(user);
             success = true;
